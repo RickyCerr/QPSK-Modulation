@@ -1,0 +1,27 @@
+READ ME - Instructions for Computing Assignment 3
+by Richard Cerrato
+12/4/2023
+
+To run this code, simply press the 'run button'. You can adjust the bit stream length as needed. It is the first line and the variable is called 'sequence_len'.
+
+There are two MAIN folders:
+1) Using Built-in FFT and my Sliding Window
+2) Using my FFT and Overlap-Save
+
+These two folders contain SEVERAL different versions of the code. All versions contain Modules 1-3.
+
+1) QPSK_Master_0p1noise - This file does not perform performance evaluation. It retrives the two input signals based on adding noise with a gain of 0.1. Plots only from Module 3.
+  
+2) QPSK_Master_ALL_plots_const_SNR - This file contains all the plot OUTPUTS from Modules 1-3. It DOES NOT itterate through different signal-to-noise ratios. It only runs once with SNR set to 0 (this can be manually changed). Takes some time to run since there are a lot of plots. But the plots perfectly visualize every step.
+
+3) QPSK_Master_ALL_plots_var_SNR - This file contains all the plot OUTPUTS from Modules 1-3. It DOES itterate through different signal-to-noise ratios. It runs the entire program 3 times, changing the SNR from 0 to 5 to 10. Takes even more time to run since there are a lot of plots AND it loops 3 times. 
+
+4) QPSK_Master_PART3_plots_const_SNR - This file only contains the plot OUTPUTS from Module 3. It DOES NOT itterate through different signal-to-noise ratios. It only runs once with SNR set to 0 (this can be manually changed). Takes less time to run since there are less plots and it doesn't loop.
+
+5) QPSK_Master_PART3_plots_var_SNR - This file only contains the plot OUTPUTS from Module 3. It DOES itterate through different signal-to-noise ratios. It runs the entire program 3 times, changing the SNR from 0 to 5 to 10. Takes less time to run since there are less plots but it does loop.
+
+6) QPSK_Master_NO_plots_var_SNR - This file conatins NO PLOTS. It DOES itterate through different signal-to-noise ratios. It runs the entire program 3 times, changing the SNR from 0 to 5 to 10. Takes the least time to run since there are no plots. This is mainly to show the performance evaluation efficiently.
+
+These files are all their own main files, i.e they don't need any supporting input/variable files. They can be ran completely independently.
+
+The two folders contain the same versions but one uses the given FFT/iFFT and my sliding window. The other uses my own DFT design and overlap-save.
